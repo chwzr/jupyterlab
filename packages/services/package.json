@@ -1,7 +1,7 @@
 {
-  "name": "@jupyterlab/services",
+  "name": "@cavorit/jupyterlabservices",
   "version": "7.0.0-alpha.12",
-  "description": "Client APIs for the Jupyter services REST APIs",
+  "description": "Client APIs for the Jupyter services REST APIs as ESM Build",
   "keywords": [
     "jupyter",
     "notebook",

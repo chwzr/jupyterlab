@@ -7,12 +7,14 @@ const version = require('./package.json').version;
 
 module.exports = {
   entry: './lib',
+  experiments: {
+    outputModule: true
+  },
   output: {
     filename: './dist/index.js',
-    library: '@jupyterlab/services',
-    libraryTarget: 'umd',
+    libraryTarget: 'module',
     umdNamedDefine: true,
-    publicPath: 'https://unpkg.com/@jupyterlab/services@' + version + '/dist/'
+    publicPath: 'https://unpkg.com/@cavorit/jupyterlabservices@' + version + '/dist/'
   },
   bail: true,
   mode: 'production',
